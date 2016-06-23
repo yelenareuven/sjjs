@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+<script>
+	function check() {
+		if (document.pas1.password2.value != document.pas1.password1.value) {
+			alert(" הסיסמאות לא שוות ");
+			return false;
+		}
+	}
+		</script>
+		<h1>אימות נתונים</h1>
+		
+		<form name="pas1" action="mailto:you@yourmail.net" method="post" enctype="text/plain">
+				<br>
+				<input type="text" name="firstname" cols="30">  שם פרטי
+
+				<input type="text" name="lastname" cols="30"> שם משפחה
+			<br>
+			<input type="email" name="myemail" cols="30">
+			דואר אלקטרוני
+			<br>
+			<br>
+			<input type="number" name="mayAge" min="1" max="99">
+			מה גיל שלך
+			<br>
+			<input type="password" name="password1" cols="20">  סיסמא
+			<br>
+			<input type="password" name="password2" cols="20">  אימות סיסמא         
+			<br>
+			<input type="submit" value="השווה סימסאות" onclick="check()">
+			<br>
+			</form><input type="submit">
+			<input type="reset" name="reset1">
+		
+		</body>
+		</html>
